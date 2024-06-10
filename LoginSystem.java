@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class LoginSystem {
-    private static Vector<User> users = new Vector<>();
+    private static Vector<User> user = new Vector<>();
 
     public static void main(String[] args) {
 
