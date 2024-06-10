@@ -22,6 +22,7 @@ public class LoginSystem {
             System.out.print("Enter password: ");
             String password = scanner.nextLine();
 
+
             isLoggedIn = login(username, password);
 
             if (!isLoggedIn) {
@@ -32,4 +33,16 @@ public class LoginSystem {
         System.out.println("Login successful! Welcome, " + scanner + "!");
 
     }
+
+    public static boolean login(String username, String password) {
+
+        for (User user : users) {
+            if (user.getUsername().equals(username)) {
+                return user.getPassword().equals(password);
+            }
+        }
+        return false;
+    }
+    
+
 }
