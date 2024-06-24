@@ -7,7 +7,7 @@ public class LoginSystem {
     private static Vector<User> user = new Vector<>();
 
     public static void main(String[] args) {
-
+        System.out.println("Test");
         users.add(new User("user1", "password1"));
         users.add(new User("user2", "password2"));
 
